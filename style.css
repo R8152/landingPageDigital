@@ -26,6 +26,7 @@ nav ul a{
     font-size: 26px;
     font-weight: bold;
     padding: 10px 20px;
+    transition: 1s;
 }
 nav ul a:hover{
     background-color: #d40485;
@@ -58,8 +59,92 @@ nav ul a:hover{
     font-weight: bold;
     padding: 10px 40px;
     margin-top: 10px;
+    transition: 2s;
+    /* O transition sozinho ou sem nenhuma ação de transform e fora de hover faz com que a tag que esteja usando ele volte ao normal em 2 segundos */
 }
 .opt-agendar:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
+    /* transform: rotate(360deg);  */
     transition: 2s;
+    /* O transition faz o efeito de transform durar 2 segundos */
+}
+.aprendizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pergunta-aprender{
+    margin: 50px 0;
+}
+.modulo{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    width: 97%;
+    text-align: center;
+}
+.list-m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f4f4f4;
+    width: 97%;
+}
+.list-m ul{
+    list-style: none;
+}
+.item-m{
+    font-size: 20px;
+}
+.mercado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mercado h2{
+    padding: 40px 0;
+}
+.mercado-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #d40485;
+    color: white;
+    margin: 5px;
+    width: 98%;
+}
+.agendamento{
+    padding: 100px;
+}
+.h-agendar{
+    margin-bottom: 20px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.info input{
+    width: 100%;
+    padding: 5px;
+}
+.nome, .email, .telefone{
+    margin: 5px 0;
+}
+.enviar{
+    margin-top: 5px;
+    padding: 10px 0;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
